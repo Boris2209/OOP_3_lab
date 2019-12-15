@@ -1,6 +1,6 @@
 public class Ship {
 
-    int length, x, y, wounds;
+    private int length, x, y, wounds;
 
     Ship(int length, int x, int y){
         this.length=length;
@@ -19,5 +19,13 @@ public class Ship {
 
     public int getY() {
         return y;
+    }
+
+    public void makeWound(){
+        this.wounds++;
+    }
+
+    public boolean isDestroyed(){
+        return this.wounds==this.length;
     }
 }
