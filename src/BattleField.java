@@ -1,8 +1,6 @@
 import java.util.List;
 
 public class BattleField {
-    List <Ship> ships;
-    List <Shot> shots;
-
-
+    private List <Ship> ships;
+    private List <Shot> shots;
 }
